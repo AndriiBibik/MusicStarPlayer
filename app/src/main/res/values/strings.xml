@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">Music Star Player</string>
+
+    <!--Activities-->
+    <string name="activity_all_songs_title">All songs</string>
+    <string name="activity_song_details_title">Song details</string>
+    <string name="activity_albums">Albums</string>
+    <string name="activity_artists">Artists</string>
+
+    <!--Song details activity-->
+    <string name="title_text">Title</string>
+    <string name="artist_text">Artist</string>
+    <string name="album_text">Album</string>
+
+    <!--All songs activity-->
+    <!--Buttons-->
+    <string name="artists_button_text">Artists</string>
+    <string name="albums_button_text">Albums</string>
+    <string name="all_songs_button_text">All songs</string>
+
+    <!--Shuffle-->
+    <string name="shuffle_text">Shuffle</string>
+
+    <!--Albums-->
+    <string name="album_ariana_grande">My Everything</string>
+    <string name="album_muse">The Resistance</string>
+    <string name="album_billie_eilish">When We All Fall Asleep, Where Do We Go?</string>
+
+    <!--Artists-->
+    <string name="name_ariana_grande">Ariana Grande</string>
+    <string name="name_muse">Muse</string>
+    <string name="name_billie_eilish">Billie Eilish</string>
+
+    <!--Songs-->
+    <!--Ariana Grande-->
+    <string name="song_ariana_grande_1">Problem</string>
+    <string name="song_ariana_grande_2">One Last Time</string>
+    <string name="song_ariana_grande_3">Why Try</string>
+    <!--Billie Eilish-->
+    <string name="song_billie_eilish_1">Bad Guy</string>
+    <string name="song_billie_eilish_2">All the Good Girls Go to Hell</string>
+    <string name="song_billie_eilish_3">Bury a Friend</string>
+    <!--Muse-->
+    <string name="song_muse_1">Uprising</string>
+    <string name="song_muse_2">Resistance</string>
+    <string name="song_muse_3">Undisclosed Desires</string>
+
+</resources>

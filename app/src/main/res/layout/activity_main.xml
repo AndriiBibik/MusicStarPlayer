@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/navigation_bar_padding"
+        android:background="@color/navigation_bar_background"
+        android:elevation="@dimen/navigation_bar_elevation">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/button_artists"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/button_background_color"
+            android:layout_marginLeft="@dimen/button_artists_left_margin"
+            android:layout_marginRight="@dimen/button_artists_right_margin"
+            app:cardCornerRadius="@dimen/button_radius"
+            app:cardElevation="@dimen/button_elevation">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="@dimen/button_width"
+                    android:layout_height="@dimen/button_height"
+                    app:srcCompat="@drawable/ic_stars_notes_graphics"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/button_padding"
+                    android:text="@string/artists_button_text"
+                    android:textSize="@dimen/button_text_size"
+                    android:textColor="@color/button_text_color"/>
+            </FrameLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/button_albums"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/button_background_color"
+            app:cardCornerRadius="@dimen/button_radius"
+            app:cardElevation="@dimen/button_elevation">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="@dimen/button_width"
+                    android:layout_height="@dimen/button_height"
+                    app:srcCompat="@drawable/ic_stars_notes_graphics"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/button_padding"
+                    android:text="@string/albums_button_text"
+                    android:textSize="@dimen/button_text_size"
+                    android:textColor="@color/button_text_color"/>
+            </FrameLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/shuffle_functionality"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/shuffle_padding"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="@dimen/shuffle_margin_left">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/shuffle_text_size"
+            android:textColor="@color/shuffle_text_color"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:text="@string/shuffle_text"
+            android:layout_marginRight="@dimen/shuffle_text_ic_offset"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/shuffle_ic_size"
+            android:adjustViewBounds="true"
+            android:tint="@color/shuffle_text_color"
+            app:srcCompat="@drawable/ic_shuffle"/>
+
+    </LinearLayout>
+
+    <!--List of songs-->
+    <ListView
+        android:id="@+id/list_all_songs"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/list_songs_padding"/>
+
+</LinearLayout>

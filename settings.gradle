@@ -1,0 +1,2 @@
+rootProject.name='Music Star Player'
+include ':app'

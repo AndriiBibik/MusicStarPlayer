@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ArtistsActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/navigation_bar_padding"
+        android:background="@color/navigation_bar_background"
+        android:elevation="@dimen/navigation_bar_elevation">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/button_all_songs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/button_background_color"
+            android:layout_marginLeft="@dimen/button_artists_left_margin"
+            android:layout_marginRight="@dimen/button_artists_right_margin"
+            app:cardCornerRadius="@dimen/button_radius"
+            app:cardElevation="@dimen/button_elevation">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="@dimen/button_width"
+                    android:layout_height="@dimen/button_height"
+                    app:srcCompat="@drawable/ic_stars_notes_graphics"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/button_padding"
+                    android:text="@string/all_songs_button_text"
+                    android:textSize="@dimen/button_text_size"
+                    android:textColor="@color/button_text_color"/>
+            </FrameLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/button_albums"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/button_background_color"
+            app:cardCornerRadius="@dimen/button_radius"
+            app:cardElevation="@dimen/button_elevation">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="@dimen/button_width"
+                    android:layout_height="@dimen/button_height"
+                    app:srcCompat="@drawable/ic_stars_notes_graphics"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/button_padding"
+                    android:text="@string/albums_button_text"
+                    android:textSize="@dimen/button_text_size"
+                    android:textColor="@color/button_text_color"/>
+            </FrameLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.google.android.flexbox.FlexboxLayout
+            android:id="@+id/flexbox_artists"
+            android:padding="@dimen/activity_padding"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:flexWrap="wrap"
+            app:justifyContent="space_around"
+            app:showDivider="middle"
+            app:dividerDrawable="@drawable/flexbox_divider"/>
+    </ScrollView>
+
+</LinearLayout>

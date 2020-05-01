@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Common sizes-->
+    <dimen name="activity_padding">8dp</dimen>
+
+    <!--Custom navigation bar-->
+    <dimen name="navigation_bar_padding">8dp</dimen>
+    <dimen name="navigation_bar_elevation">2dp</dimen>
+
+    <!--Activity main buttons-->
+    <dimen name="button_width">80dp</dimen>
+    <dimen name="button_height">40dp</dimen>
+    <dimen name="button_padding">4dp</dimen>
+    <dimen name="button_radius">8dp</dimen>
+    <dimen name="button_text_size">16sp</dimen>
+    <dimen name="button_elevation">2dp</dimen>
+    <dimen name="button_artists_left_margin">4dp</dimen>
+    <dimen name="button_artists_right_margin">16dp</dimen>
+
+    <!--Shuffle functionality-->
+    <dimen name="shuffle_padding">12dp</dimen>
+    <dimen name="shuffle_margin_left">8dp</dimen>
+    <dimen name="shuffle_text_size">20sp</dimen>
+    <dimen name="shuffle_ic_size">20sp</dimen>
+    <dimen name="shuffle_text_ic_offset">8sp</dimen>
+
+    <!--List of all songs-->
+    <dimen name="list_songs_padding">8dp</dimen>
+    <dimen name="album_art_in_songs_list">64dp</dimen>
+    <dimen name="song_item_ic_padding">8dp</dimen>
+    <dimen name="song_item_details_padding_horizontal">16dp</dimen>
+    <dimen name="song_artist_text_size">14sp</dimen>
+    <dimen name="song_title_text_size">16sp</dimen>
+    <dimen name="song_title_bottom_margin">4dp</dimen>
+
+    <!--Song details activity-->
+    <dimen name="title_text_size">20sp</dimen>
+    <dimen name="info_text_size">16sp</dimen>
+    <dimen name="title_to_info_offset">2dp</dimen>
+    <dimen name="info_to_info_offset">8dp</dimen>
+    <dimen name="album_ic_size">128dp</dimen>
+    <dimen name="album_ic_elevation">4dp</dimen>
+
+    <!--Albums activity-->
+    <dimen name="item_padding_in_albums_activity">4dp</dimen>
+    <dimen name="item_margin_in_albums_activity">8dp</dimen>
+    <dimen name="album_ic_size_in_albums">128dp</dimen>
+    <dimen name="ic_to_title_offset_in_albums">8dp</dimen>
+    <dimen name="album_title_text_size_in_albums">16sp</dimen>
+    <dimen name="title_artist_offset_in_albums">2dp</dimen>
+    <dimen name="artist_text_size_in_albums">16sp</dimen>
+</resources>
